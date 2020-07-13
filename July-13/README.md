@@ -1,6 +1,6 @@
 # Art using loops and functions
 
-![self-portrait](./self-portrait.png)
+![self-portrait](./self_portrait.png)
 
 I chose to use my self portrait for this assignment because I ended up using loops to convey the water in the background for me. 
 
