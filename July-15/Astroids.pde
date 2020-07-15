@@ -6,10 +6,9 @@ class Astroids {
   float x, y, xSpeed;
   boolean isGoingLeft;
   
-  Astroids(float xpos, float ypos) {
-    x = xpos;
-    y = ypos;
+  Astroids() {
     xSpeed = XSPEED;
+    resetAstroid();
   }
   
   void resetAstroid() {
