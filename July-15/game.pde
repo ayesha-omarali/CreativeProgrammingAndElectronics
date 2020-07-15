@@ -1,4 +1,3 @@
-import java.util.Random;
 Astroids[] astroidArray = new Astroids[15];
 SpaceShip ship;
 void setup() {
@@ -9,8 +8,7 @@ void setup() {
   
   //prepare astroid debris
   for (int i=0; i < astroidArray.length; i++) {
-    int leftOrRight = new Random().nextBoolean() ? 0 : 400;
-    astroidArray[i] = new Astroids(leftOrRight, random(0, 380));
+    astroidArray[i] = new Astroids();
   }
 }
 
