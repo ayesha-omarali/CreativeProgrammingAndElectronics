@@ -56,7 +56,7 @@ void updateCollisions() { // draws each astroid using Astroids class, and update
     if(astroidArray[i].hasHitShip(ship)){ //if collision
       ship.respawn(); //respawn ship
       ship.score--; //deduct score
-      ship.decreaseDifficulty = true;
+      ship.decreaseDifficulty = true; //make game easier because user is failing
     }
   }
   ship.decreaseDifficulty = false;
@@ -72,7 +72,7 @@ void draw() {
     updateCollisions();
 
   } else { // playing game 
-    startOverButton();
+    startOverText();
     ship.update();
     ship.drawSpaceShip();
     Score currScore = new Score(50);
@@ -82,7 +82,7 @@ void draw() {
   }
 }
 
-void startOverButton(){
+void startOverText(){
   fill(255);
   textSize(10);
   textAlign(RIGHT);
