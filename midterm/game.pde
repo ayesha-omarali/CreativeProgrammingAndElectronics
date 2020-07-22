@@ -96,6 +96,10 @@ void startScreen(){
   stroke(0,0,0);
   textAlign(CENTER);
   text(message, width/2, height/2);
+  
+  textFont(f, 15);
+  textAlign(CENTER);
+  text("UP & DOWN Keys to cross avoiding the astroids!", width/2, height/2 +  30);
 }
 
 void mouseClicked(){
